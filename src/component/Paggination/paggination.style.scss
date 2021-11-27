@@ -1,0 +1,26 @@
+.paggination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 4vmin;
+  .btn-paggination {
+    background-color: $primary;
+    border: 1px solid $action-call-color;
+    outline: none;
+    margin: 0 0.5vmin;
+    padding: 1vmin;
+    text-decoration: none;
+    color: $default-text-color;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: all 0.5s ease 0s;
+  }
+  .btn-paggination:hover {
+    color: $action-call-color;
+  }
+  .btn-paggination--active {
+    border-color: $action-selected-color;
+    color: $action-selected-color;
+  }
+}

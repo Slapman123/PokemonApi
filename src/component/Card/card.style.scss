@@ -1,0 +1,45 @@
+.card {
+  @include centerFlexCol;
+  width: 33.33%;
+  @include inBox;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 2vmin;
+
+  @media (max-width: $medium) {
+    width: 50%;
+  }
+  @media (max-width: $small) {
+    width: 100%;
+  }
+  h2 {
+    width: 100%;
+  }
+  .card-info {
+    margin-top: 3vmin;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    @include neumBox;
+    background-color: $primary;
+    width: 100%;
+    p,
+    span {
+      text-transform: capitalize;
+      margin-top: 20px;
+    }
+  }
+}
+
+.card--red {
+  border: 2px solid $tallest-color;
+}
+
+.card--blue {
+  outline: 2px solid $no-vehicles-color;
+  outline-offset: -1.6vmin;
+  strong {
+    color: $no-vehicles-color;
+  }
+}

@@ -1,0 +1,8 @@
+//style of html component
+@import "./components/buttons";
+@import "./components/inputs";
+@import "./components/conteiner";
+
+//style of tsx component
+@import "../component/Card/card.style.scss";
+@import "../component/Paggination/paggination.style.scss";

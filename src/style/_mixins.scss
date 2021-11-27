@@ -1,0 +1,34 @@
+@mixin neumBox {
+  background-color: $primary;
+  border-radius: 0.5vmin;
+  padding: 2vmin;
+  box-shadow: 7px 7px 14px #1a1b1d, -7px -7px 14px #3e3f43;
+  @media (max-width: $medium-small) {
+    padding: 3.5vmin 5vmin;
+  }
+}
+
+@mixin inBox {
+  border-radius: 1rem;
+  padding: 4vmin;
+  box-shadow: inset 3px 3px 3px #202125, inset -3px -3px 3px #353535;
+  @media (max-width: $medium-small) {
+    padding: 4vmin 2vmin;
+  }
+}
+
+@mixin centerFlexCol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+@mixin centerFlexRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  @media (max-width: $medium-small) {
+    flex-direction: column;
+  }
+}
